@@ -20,15 +20,6 @@ namespace MyGame
             Player = gameMap.Player;
             BonusTotalCount = gameMap.BonusTotalCount;
             coveredByOther = gameMap.coveredByOther;
-
-            //Monsters = gameMap.Monsters;
-            //Holes = gameMap.Holes;
-            //PlayerCoordinate = gameMap.PlayerCoordinate;
-            //Bonuses = gameMap.Bonuses;
-
-            //Ladders = gameMap.Ladders;
-            //Ropes = gameMap.Ropes;
-            //Terrain = gameMap.Terrain;
         }
 
         public GameMap(ICreature[,] map, Point playerCoord, Player player, int bonusCount,
@@ -40,22 +31,8 @@ namespace MyGame
             Player = player;
             BonusTotalCount = bonusCount;
             coveredByOther = new Dictionary<Point, ICreature>();
-
-            //Monsters = monsters;
-            //Ladders = ladders;
-            //Ropes = ropes;
-            //Bonuses = bonuses;
-            //Holes = holes;
-            //Terrain = terrain;
         }
 
-        //public HashSet<Point> Monsters;
-        //public HashSet<Point> Bonuses;
-        //public HashSet<Point> Holes;
-
-        //public HashSet<Point> Ladders;
-        //public HashSet<Point> Ropes;
-        //public HashSet<Point> Terrain;
         public Point PlayerCoordinate;
 
         public readonly Player Player;
@@ -63,37 +40,7 @@ namespace MyGame
 
         public int BonusTotalCount { get; private set; }
 
-        private Dictionary<Point, ICreature> coveredByOther;  //delete
-
-        //public Creature IdentifyCreature(int x, int y)
-        //{
-        //    var point = new Point(x, y);
-        //    if (Monsters.ContainsKey(point))
-        //        return Creature.Monster;
-        //    if (Ladders.ContainsKey(point))
-        //        return Creature.Ladder;
-        //    if (Ropes.ContainsKey(point))
-        //        return Creature.Rope;
-        //    if (Bonuses.ContainsKey(point))
-        //        return Creature.Bonus;
-        //    if (Holes.ContainsKey(point))
-        //        return Creature.Hole;
-        //    if (Terrain.ContainsKey(point))
-        //        return Creature.Terrain;
-        //    else
-        //        return Creature.Empty;
-        //}
-
-
-        //public bool IsTextures(int x, int y) => Map[x, y] != Player && !Monsters.Contains(new Point(x, y));
-        //public bool IsMonster(int x, int y) => Monsters.Contains(new Point(x, y));
-        //public bool IsBonus(int x, int y) => Bonuses.Contains(new Point(x, y));
-        //public bool IsLadder(int x, int y) => Ladders.Contains(new Point(x, y));
-        //public bool IsTerrain(int x, int y) => Terrain.Contains(new Point(x, y));
-        //public bool IsHole(int x, int y) => Holes.Contains(new Point(x, y));
-        //public bool IsRope(int x, int y) => Ropes.Contains(new Point(x, y));
-        //public bool IsPlayer(int x, int y) => PlayerCoordinate == new Point(x, y);
-
+        private Dictionary<Point, ICreature> coveredByOther; 
 
         public bool InBounds(Point point)
         {
@@ -105,14 +52,6 @@ namespace MyGame
             var point = new Point(x, y);
             return InBounds(point);
         }
-
-        //public List<Point> GetActiveCreatures()
-        //{
-        //    return new List<Point>(Monsters)
-        //    {
-        //        PlayerCoordinate
-        //    };
-        //}
 
         public void StandOverCreature(int x, int y)
         {

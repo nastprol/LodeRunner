@@ -16,8 +16,6 @@ namespace MyGame
         private Player Player => gameMap.Player;
         public int MapWidth => gameMap.GetWidth();
         public int MapHeight => gameMap.GetHeight();
-        //public Creature IdentifyCreature(int x, int y) => gameMap.IdentifyCreature(x, y);
-
 
         public int BonusTotalCount => gameMap.BonusTotalCount;
         public int BonusLeft => BonusTotalCount - Player.BonusCollectCount;
@@ -25,19 +23,7 @@ namespace MyGame
         public bool PlayerWon => Player.IsAlive && IsOver;
 
 
-        private ICreature[,] tempMap; //убрать
-
-
-
-
-        //private HashSet<Point> monsters = new HashSet<Point>();
-        //private HashSet<Point> bonuses = new HashSet<Point>();
-        //private HashSet<Point> holes = new HashSet<Point>();
-        //private Point PlayerCoordinate;
-
-
-
-
+        private ICreature[,] tempMap; 
 
         public Game(GameMap map)
         {

@@ -18,7 +18,8 @@ namespace MyGame
 
         public GameForm()
         {
-            game = new Game(new MapCreator("B  P T M").CreateMap());
+            var map = "MTPRLB ";
+            game = new Game(new MapCreator(map).CreateMap());
             ClientSize = new Size(850, 600);
             timer = new Timer { Interval = 5 };
             DirectoryInfo imagesDirectory = new DirectoryInfo("images");
@@ -80,8 +81,3 @@ namespace MyGame
         }
     }
 }
-
-
-
-
-

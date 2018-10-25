@@ -15,8 +15,8 @@ C:\Users\Настя\Desktop\LodeRunner\ConsoleApp23\bin\Debug\ConsoleApp23.pdb
 C:\Users\Настя\Desktop\LodeRunner\ConsoleApp23\bin\Debug\nunit.framework.dll
 C:\Users\Настя\Desktop\LodeRunner\ConsoleApp23\bin\Debug\nunit.framework.pdb
 C:\Users\Настя\Desktop\LodeRunner\ConsoleApp23\bin\Debug\nunit.framework.xml
-C:\Users\Настя\Desktop\LodeRunner\ConsoleApp23\obj\Debug\ConsoleApp23.csprojAssemblyReference.cache
 C:\Users\Настя\Desktop\LodeRunner\ConsoleApp23\obj\Debug\ConsoleApp23.csproj.CoreCompileInputs.cache
 C:\Users\Настя\Desktop\LodeRunner\ConsoleApp23\obj\Debug\ConsoleApp23.csproj.CopyComplete
 C:\Users\Настя\Desktop\LodeRunner\ConsoleApp23\obj\Debug\ConsoleApp23.exe
 C:\Users\Настя\Desktop\LodeRunner\ConsoleApp23\obj\Debug\ConsoleApp23.pdb
+C:\Users\Настя\Desktop\LodeRunner\ConsoleApp23\obj\Debug\ConsoleApp23.csprojAssemblyReference.cache
